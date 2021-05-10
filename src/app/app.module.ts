@@ -16,6 +16,7 @@ import { GallerySectionComponent } from './gallery-section/gallery-section.compo
 import { ChefSectionComponent } from './chef-section/chef-section.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { AboutSectionLiComponent } from './about-section-li/about-section-li.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { FooterComponent } from './footer/footer.component';
     GallerySectionComponent,
     ChefSectionComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    AboutSectionLiComponent
     ],
   imports: [
     BrowserModule
