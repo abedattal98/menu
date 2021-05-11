@@ -14,7 +14,7 @@
                {{this.role}}
               </p>
               <ul>
-                <about-section-li></about-section-li>
+                <about-section-li *ngFor="let x of list" [name]="x.name"></about-section-li>
                 <li><i class="icofont-check-circled"></i> this is static1</li>
               </ul>
               <p>
