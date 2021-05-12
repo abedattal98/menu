@@ -5,20 +5,20 @@
           <div class="row" >
             <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
               <div class="about-img">
-                <img src="{{this.image}}" alt="">
+                <img src="{{user.image}}" alt="">
               </div>
             </div>
             <div  class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-              <h3 >  {{name}}</h3>
+              <h3 >  {{user.name}}</h3>
               <p class="font-italic">
-               {{role}}
+               {{user.role}}
               </p>
               <ul>
                 <about-section-li *ngFor="let x of list" [name]="x.name"></about-section-li>
                 <li><i class="icofont-check-circled"></i> this is static1</li>
               </ul>
               <p>
-                {{this.icon}}
+                {{user.icon}}
 
               </p>
             </div>

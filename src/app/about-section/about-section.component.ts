@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { IUser } from '../app.component';
 
 @Component({
   selector: 'about-section',
@@ -6,10 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./about-section.component.css']
 })
 export class AboutSectionComponent implements OnInit {
-  @Input() name = null;
-  @Input() role = null;
-  @Input() image = null;
-  @Input() icon = null;
+  @Input() user:IUser;
   @Input() list = null
 
 

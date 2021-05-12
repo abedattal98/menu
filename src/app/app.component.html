@@ -5,7 +5,9 @@
 
   <main id="main">
 
-    <about-section [name]="name" [icon]="icon" [role]="role" [image]="image" [list]="list"></about-section>
+    <about-section [user]="User" [list]="list"></about-section>
+    <div><about-section-li *ngFor="let x of list" [name]="x.name"></about-section-li></div>
+
    
     <why-us-section></why-us-section>
     <menu-section></menu-section>
