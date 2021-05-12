@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { IWhy } from '../app.component';
 
 @Component({
   selector: 'why-us-section',
@@ -6,15 +7,11 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./why-us-section.component.css']
 })
 export class WhyUsSectionComponent implements OnInit {
-why=[]
-index = 100;
+@Input() why :IWhy
+
 
   constructor() { 
-    fetch('https://js-test-abed.herokuapp.com/rawaa')
-    .then(response => response.json())
-    .then(json =>{
-      this.why =json.Sheet2;
-    })
+
   }
 
   ngOnInit(): void {

@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   User:IUser
+  why:IWhy
   list =[]
   listC =[]
 
@@ -19,6 +20,11 @@ export class AppComponent {
   .then(json =>{
     this.User =json.Sheet1[0];
    
+  })
+  fetch('https://js-test-abed.herokuapp.com/rawaa')
+  .then(response => response.json())
+  .then(json =>{
+    this.why =json.Sheet2;
   })
   fetch('https://obscure-retreat-73939.herokuapp.com/rawaa')
   .then(response => response.json())
@@ -35,6 +41,12 @@ export class AppComponent {
 
 
 export abstract class IUser{
+  name:string;
+  image:string;
+  role:string;
+  icon:string;
+}
+export abstract class IWhy{
   name:string;
   image:string;
   role:string;
