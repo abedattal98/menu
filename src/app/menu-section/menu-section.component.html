@@ -11,9 +11,9 @@
         <div class="col-lg-12 d-flex justify-content-center">
           <ul id="menu-flters">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-starters">Starters</li>
-            <li data-filter=".filter-starterss">Starterss</li>
+            <menu-section-data-filter *ngFor="let x of menu" [name]="x.name" [filter]='".filter-"+x.name'></menu-section-data-filter>           
             <li data-filter=".filter-salads">Salads</li>
+            <li data-filter=".filter-Toni">Toni</li>
             <li data-filter=".filter-specialty">Specialty</li>
           </ul>
         </div>
@@ -21,7 +21,7 @@
 
       <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
 
-        <div class="col-lg-6 menu-item filter-starters">
+        <div class="col-lg-6 menu-item filter-Toni">
           <img src="assets/img/menu/lobster-bisque.jpg" class="menu-img" alt="">
           <div class="menu-content">
             <a href="#">Lobster Bisque</a><span>$5.95</span>
@@ -50,7 +50,7 @@
           </div>
         </div>
 
-        <div class="col-lg-6 menu-item filter-starters">
+        <div class="col-lg-6 menu-item filter-Toni">
           <img src="assets/img/menu/cake.jpg" class="menu-img" alt="">
           <div class="menu-content">
             <a href="#">Crab Cake</a><span>$7.95</span>
@@ -80,7 +80,7 @@
           </div>
         </div>
 
-        <div class="col-lg-6 menu-item filter-starters">
+        <div class="col-lg-6 menu-item filter-Toni">
           <img src="assets/img/menu/mozzarella.jpg" class="menu-img" alt="">
           <div class="menu-content">
             <a href="#">Mozzarella Stick</a><span>$4.95</span>

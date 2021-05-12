@@ -9,8 +9,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   User:IUser
   Why:IWhy
+  Menu:IMenu
   list =[]
-  listC =[]
+  //menu =[]
 
   
   title = 'ang';
@@ -30,6 +31,7 @@ export class AppComponent {
   .then(response => response.json())
   .then(json =>{
     this.list =json;
+    this.Menu=json;
   })
   // fetch('https://restcountries.eu/rest/v2/all')
   // .then(response => response.json())
@@ -51,4 +53,11 @@ export abstract class IWhy{
   image:string;
   role:string;
   icon:string;
+}
+export abstract class  IMenu{
+  name:string;
+  filter:string
+constructor(){
+ // this.filter=".filter-"+this.name;
+}
 }
