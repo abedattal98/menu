@@ -20,13 +20,11 @@ export class AppComponent {
   .then(response => response.json())
   .then(json =>{
     this.User =json.Sheet1[0];
+    this.Why =json.Sheet2;
+
    
   })
-  fetch('https://js-test-abed.herokuapp.com/rawaa')
-  .then(response => response.json())
-  .then(json =>{
-    this.Why =json.Sheet2;
-  })
+  
   fetch('https://obscure-retreat-73939.herokuapp.com/rawaa')
   .then(response => response.json())
   .then(json =>{
