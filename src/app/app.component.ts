@@ -9,7 +9,28 @@ import { Component } from '@angular/core';
 export class AppComponent {
   User:IUser
   Why:IWhy
-  Menu:IMenu
+  Menu = [
+    {
+      id: 0,
+      name: 'All',
+      filter: 'all'
+    },
+    {
+      id: 1,
+      name: 'Food',
+      filter: '.filter-specialty'
+    },
+    {
+      id: 1,
+      name: 'Salad',
+      filter: '.filter-salads'
+    },
+    {
+      id: 1,
+      name: 'Starters',
+      filter: '.filter-starters'
+    },
+  ]
   list =[]
   //menu =[]
 
@@ -31,7 +52,7 @@ export class AppComponent {
   .then(response => response.json())
   .then(json =>{
     this.list =json;
-    this.Menu=json;
+    // this.Menu=json;
   })
   // fetch('https://restcountries.eu/rest/v2/all')
   // .then(response => response.json())

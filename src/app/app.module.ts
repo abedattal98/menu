@@ -17,7 +17,7 @@ import { ChefSectionComponent } from './chef-section/chef-section.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutSectionLiComponent } from './about-section-li/about-section-li.component';
-import { MenuSectionDataFilterComponent } from './menu-section-data-filter/menu-section-data-filter.component';
+import { DataFilterDirective } from './data-filter.directive';
 
 @NgModule({
   declarations: [
@@ -37,7 +37,7 @@ import { MenuSectionDataFilterComponent } from './menu-section-data-filter/menu-
     ContactComponent,
     FooterComponent,
     AboutSectionLiComponent,
-    MenuSectionDataFilterComponent
+    DataFilterDirective
     ],
   imports: [
     BrowserModule
