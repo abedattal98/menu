@@ -8,13 +8,11 @@ import { IWhy } from '../app.component';
 })
 export class WhyUsSectionComponent implements OnInit {
 @Input() why :IWhy
-
-
   constructor() { 
 
   }
-
   ngOnInit(): void {
+    
   }
 
 }
