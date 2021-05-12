@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   User:IUser
-  why:IWhy
+  Why:IWhy
   list =[]
   listC =[]
 
@@ -24,7 +24,7 @@ export class AppComponent {
   fetch('https://js-test-abed.herokuapp.com/rawaa')
   .then(response => response.json())
   .then(json =>{
-    this.why =json.Sheet2;
+    this.Why =json.Sheet2;
   })
   fetch('https://obscure-retreat-73939.herokuapp.com/rawaa')
   .then(response => response.json())
