@@ -10,6 +10,8 @@ export class AppComponent {
   User:IUser
   Why:IWhy
   Menu:IMenu
+  MenuItem:IMenuItem
+
   list =[]
   //menu =[]
 
@@ -20,9 +22,11 @@ export class AppComponent {
   .then(response => response.json())
   .then(json =>{
     this.User =json.Sheet1[0];
-    this.Why =json.Sheet4;
-    this.Menu=json.Sheet2;
+    this.Why =json.Sheet;
+    this.Menu=json.Sheet5;
     this.list =json.Sheet3;
+    this.MenuItem =json.Sheet5;
+
   })
   
   fetch('https://obscure-retreat-73939.herokuapp.com/rawaa')
@@ -54,7 +58,11 @@ export abstract class IWhy{
 export abstract class  IMenu{
   name:string;
   filter:string
-constructor(){
- // this.filter=".filter-"+this.name;
+
 }
+export abstract class  IMenuItem{
+  name:string;
+  description:string
+  category:string
+  image:string
 }

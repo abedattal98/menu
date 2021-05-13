@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { IMenuItem } from '../app.component';
 
 @Component({
   selector: 'menu-section',
@@ -7,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class MenuSectionComponent implements OnInit {
   @Input() menu = null
+  @Input() menuItem :IMenuItem 
 
   constructor() { }
 
