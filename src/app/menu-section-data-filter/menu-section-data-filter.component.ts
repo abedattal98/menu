@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./menu-section-data-filter.component.css']
 })
 export class MenuSectionDataFilterComponent implements OnInit {
-  @Input() category = ""
+  @Input() name = ""
   @Input()  filter = ""
   
 

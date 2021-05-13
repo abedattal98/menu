@@ -22,8 +22,8 @@ export class AppComponent {
   .then(response => response.json())
   .then(json =>{
     this.User =json.Sheet1[0];
-    this.Why =json.Sheet;
-    this.Menu=json.Sheet5;
+    this.Why =json.Sheet4;
+    this.Menu=json.Sheet6;
     this.list =json.Sheet3;
     this.MenuItem =json.Sheet5;
 
